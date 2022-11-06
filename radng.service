@@ -1,0 +1,11 @@
+[Unit]
+Description=True random number generator using radioactive decay
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/beck/radng/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
